@@ -13,15 +13,9 @@ function numberToLetters(number) {
 
   return letters
     .split('')
-    .map((_, i) => {
-      if (i % 4 === 0 && i !== 0) {
-        return `-${_}`
-      } else {
-        return _
-      }
-    })
+    .map((_, i) => (i % 4 === 0 && i !== 0 ? `-${_}` : _))
     .join('')
     .toUpperCase()
 }
 
-console.log(numberToLetters(10000000000000000000000))
+console.log(numberToLetters(999999999))
