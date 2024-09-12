@@ -24,4 +24,4 @@ function numberToLetters(number) {
     .toUpperCase()
 }
 
-console.log(numberToLetters(10000000000000000))
+console.log(numberToLetters(10000000000000000000000))
